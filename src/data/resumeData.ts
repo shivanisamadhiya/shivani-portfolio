@@ -12,8 +12,8 @@ export const personal = {
   phone: "+91 9068384488",
   location: "Agra, Uttar Pradesh, India",
   resumeFile: "/Shivani_Samadhiya_Resume.pdf",
-  linkedin: "PLACEHOLDER_LINKEDIN_URL",
-  github: "PLACEHOLDER_GITHUB_URL",
+  linkedin: "https://www.linkedin.com/in/shivani-samadhiya-3ab768287",
+  github: "https://github.com/shivanisamadhiya",
 };
 
 export const education = {
