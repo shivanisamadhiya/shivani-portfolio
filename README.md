@@ -1,55 +1,70 @@
-# Shivani Samadhiya — Portfolio
+# 🚀 Shivani Samadhiya — Portfolio
 
-A dark, developer-themed personal portfolio built with React, TypeScript,
-Tailwind CSS, and Framer Motion. All content is sourced from
-`src/data/resumeData.ts` — a single file that mirrors the resume, so nothing
-in the UI is invented.
+A 🌙 dark, developer-themed personal portfolio built with **React**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**.
 
-## Getting started
+✨ All content is sourced from a single file — `src/data/resumeData.ts` — which mirrors the resume, so nothing in the UI is invented.
 
-Requires Node.js 18+.
+---
+
+## 👩‍💻 About Me
+
+Hi, I'm **Shivani Samadhiya** 👋 — a **Full Stack Developer (MERN)** and final-year **B.Tech CSE** student at Agra College (2022–2026).
+
+- 🛠️ Core stack: **React.js, Node.js, Express.js, MongoDB, TypeScript, JavaScript**
+- 🏥 Built **Prescripto** — an AI-integrated healthcare consultation & appointment booking platform with real-time video and payments
+- 🌐 Built **NorthPeak Digital** — a fully responsive digital agency website
+- 🎮 Built a **KBC-style quiz game** in Python
+- ☁️ Currently leveling up in **AWS**
+- 📍 Based in Agra, India
+
+📫 **Let's connect:**
+[LinkedIn](https://www.linkedin.com/in/shivani-samadhiya-3ab768287) • [GitHub](https://github.com/shivanisamadhiya) • [Portfolio](https://shivani-portfolio-three-sable.vercel.app)
+
+---
+
+## 🏁 Getting Started
+
+> Requires **Node.js 18+**
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open the local URL Vite prints (usually `http://localhost:5173`).
+🌐 Open the local URL Vite prints (usually `http://localhost:5173`)
 
-To build for production:
+### 📦 Build for production
 
 ```bash
 npm run build
-npm run preview   # preview the production build locally
+npm run preview   # 👀 preview the production build locally
 ```
 
-## Before you deploy — replace these placeholders
+---
 
-Search the codebase for `PLACEHOLDER` to find every spot that needs a real
-value (all of them live in `src/data/resumeData.ts`):
+## 🔗 Live Links
 
-- `personal.linkedin` — your LinkedIn profile URL
-- `personal.github` — your GitHub profile URL
-- Each project's `links` array — live demo, admin panel, backend API, and
-  GitHub repo URLs, for Prescripto, NorthPeak Digital, and the KBC quiz game
+All profile and project links are filled in and live in `src/data/resumeData.ts`:
 
-Until you fill these in, the corresponding buttons in the Projects section
-render as disabled (greyed out, non-clickable) rather than broken links.
+- 🔗 **LinkedIn**, 🐙 **GitHub**, and 🌐 **Portfolio** — added under `personal`
+- 📁 **Project links** (live demo, admin panel, backend API, GitHub repo) — added for **Prescripto**, **NorthPeak Digital**, and the **KBC Quiz Game**
 
-The resume PDF is already included at `public/Shivani_Samadhiya_Resume.pdf`
-and wired up to both "Download Resume" buttons — replace that file directly
-if you update your resume.
+✅ All buttons in the Projects section are now active and clickable.
 
-## Project structure
+📄 The resume PDF is included at `public/Shivani_Samadhiya_Resume.pdf` and wired up to both **"Download Resume"** buttons — replace that file directly whenever the resume is updated.
+
+---
+
+## 🗂️ Project Structure
 
 ```
 src/
-├── data/
+├── 📊 data/
 │   └── resumeData.ts       # single source of truth for all content
-├── hooks/
+├── 🪝 hooks/
 │   ├── useActiveSection.ts # drives navbar active-link highlighting
 │   └── useReducedMotion.ts # respects OS-level reduced-motion setting
-├── components/
+├── 🧩 components/
 │   ├── Doodles.tsx         # reusable hand-drawn-style SVG accents
 │   ├── Loader.tsx          # initial loading animation
 │   ├── Navbar.tsx
@@ -66,15 +81,19 @@ src/
 └── index.css
 ```
 
-## Notes
+---
 
-- The contact form has no backend — submitting it opens the visitor's email
-  client with the message pre-filled, addressed to the email in
-  `resumeData.ts`. If you want a proper backend later, swap the `handleSubmit`
-  logic in `Contact.tsx` for a call to a form service (e.g. Formspree,
-  EmailJS) or your own API.
-- All animation respects `prefers-reduced-motion` — the loading screen is
-  skipped instantly, and floating doodles render static, for visitors with
-  that OS setting enabled.
-- Colors, fonts, and spacing tokens live in `tailwind.config.js` if you want
-  to adjust the palette.
+## 📝 Notes
+
+- 📬 **Contact form:** Has no backend — submitting it opens the visitor's email client with the message pre-filled, addressed to the email in `resumeData.ts`. Want a real backend later? Swap the `handleSubmit` logic in `Contact.tsx` for a call to a form service (e.g. [Formspree](https://formspree.io), [EmailJS](https://www.emailjs.com)) or your own API.
+- ♿ **Accessibility:** All animation respects `prefers-reduced-motion` — the loading screen is skipped instantly, and floating doodles render static, for visitors with that OS setting enabled.
+- 🎨 **Styling:** Colors, fonts, and spacing tokens live in `tailwind.config.js` if you want to adjust the palette.
+
+---
+
+<div align="center">
+
+Made with 💻 + ☕ by **Shivani Samadhiya**
+
+</div>
+
