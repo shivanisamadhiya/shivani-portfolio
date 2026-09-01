@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Code2, ShieldCheck, Sparkles } from "lucide-react";
-import { aboutHighlights, education, professionalSummary } from "../data/resumeData";
+import { aboutHighlights, education, schoolEducation, professionalSummary } from "../data/resumeData";
 import { DoodleUnderline, DoodleCircleOutline } from "./Doodles";
 
 const iconFor = [Code2, ShieldCheck, Sparkles];
@@ -45,6 +45,8 @@ export default function About() {
               <GraduationCap size={20} />
               <span className="text-sm font-semibold uppercase tracking-wide">Education</span>
             </div>
+
+            {/* B.Tech */}
             <h3 className="font-display text-lg font-semibold text-ink-100">{education.degree}</h3>
             <p className="mt-1 text-sm text-ink-300">{education.college}</p>
             <p className="mt-1 text-sm text-ink-500">{education.period}</p>
@@ -57,6 +59,17 @@ export default function About() {
                 <p className="text-xs uppercase tracking-wide text-ink-500">Current SGPA</p>
                 <p className="font-display text-xl font-semibold text-gradient">{education.currentSgpa}</p>
               </div>
+            </div>
+
+            {/* 12th / 10th */}
+            <div className="mt-6 space-y-4 border-t border-white/10 pt-5">
+              {schoolEducation.map((item) => (
+                <div key={item.level}>
+                  <h4 className="text-sm font-semibold text-ink-100">{item.level}</h4>
+                  <p className="mt-0.5 text-sm text-ink-300">{item.school}</p>
+                  <p className="mt-0.5 text-xs text-ink-500">{item.period}</p>
+                </div>
+              ))}
             </div>
           </motion.div>
         </div>
