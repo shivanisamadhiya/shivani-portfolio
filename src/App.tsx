@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import Education from "./components/Education";
 import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
 import Strengths from "./components/Strengths";
@@ -16,8 +18,6 @@ export default function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Skip the decorative loading sequence entirely for users who've asked
-    // their OS to reduce motion.
     const duration = reduceMotion ? 0 : 1400;
     const timer = setTimeout(() => setLoading(false), duration);
     return () => clearTimeout(timer);
@@ -32,6 +32,8 @@ export default function App() {
           <Hero reduceMotion={reduceMotion} />
           <About />
           <Skills />
+          <Experience />
+          <Education />
           <Projects />
           <Certifications />
           <Strengths />
