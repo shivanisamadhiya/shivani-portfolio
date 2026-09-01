@@ -5,7 +5,6 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
-import Education from "./components/Education";
 import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
 import Strengths from "./components/Strengths";
@@ -33,7 +32,6 @@ export default function App() {
           <About />
           <Skills />
           <Experience />
-          <Education />
           <Projects />
           <Certifications />
           <Strengths />
@@ -44,4 +42,3 @@ export default function App() {
     </>
   );
 }
-
