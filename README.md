@@ -73,7 +73,6 @@ src/
 │   ├── About.tsx
 │   ├── Skills.tsx
 │   ├── Experience.tsx      # work experience / internships
-│   ├── Education.tsx       # education & academic background
 │   ├── Projects.tsx
 │   ├── Certifications.tsx
 │   ├── Strengths.tsx
