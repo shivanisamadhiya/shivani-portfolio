@@ -1,7 +1,6 @@
 // ---------------------------------------------------------------------------
 // Single source of truth for all portfolio content.
 // Every fact here comes directly from Shivani's resume. Nothing invented.
-// Replace the PLACEHOLDER_* values with real links when available.
 // ---------------------------------------------------------------------------
 
 export const personal = {
@@ -23,6 +22,25 @@ export const education = {
   cgpa: "7.54/10",
   currentSgpa: "9.25",
 };
+
+export interface SchoolEducation {
+  level: string;
+  school: string;
+  period: string;
+}
+
+export const schoolEducation: SchoolEducation[] = [
+  {
+    level: "12th (Senior Secondary)",
+    school: "St. Stephen Public School, Kalindi Vihar, Agra",
+    period: "2021 – 2022",
+  },
+  {
+    level: "10th (Secondary)",
+    school: "R S Public Junior School, Semara Road, Khandoli, Agra",
+    period: "2019 – 2020",
+  },
+];
 
 export const professionalSummary =
   "Entry-level Full Stack Developer / Software Engineer with hands-on experience building and extending MERN applications using React.js, Node.js, Express.js, and MongoDB. Experienced in REST API development, JWT authentication, role-based access control, third-party integrations, responsive UI development, and deployment with Vercel and Render. Built integrations for Razorpay payments, AI chatbot functionality, and ZegoCloud real-time video communication. Strong foundation in JavaScript, TypeScript fundamentals, SQL/MySQL, DSA, OOP, Git/GitHub, and responsive development with Tailwind CSS and Bootstrap. Familiar with Docker, Kubernetes, and CI/CD fundamentals.";
@@ -97,6 +115,45 @@ export const skillCategories: SkillCategory[] = [
   },
 ];
 
+export interface Experience {
+  id: string;
+  role: string;
+  company: string;
+  period: string;
+  location: string;
+  highlights: string[];
+}
+
+export const experience: Experience[] = [
+  {
+    id: "unified-mentor",
+    role: "Fullstack Web Development Intern",
+    company: "Unified Mentor Private Limited",
+    period: "Dec 2025 – Mar 2026",
+    location: "Remote",
+    highlights: [
+      "Built and deployed multiple responsive web-based projects, including a Calculator, a Weather Web App, a Landing Page, and a To-Do List application.",
+      "Developed clean, responsive user interfaces focused on usability and modern UI/UX practices.",
+      "Integrated a public API to fetch and display real-time weather data in the Weather Web App.",
+      "Gained hands-on experience in frontend development, API integration, and building responsive, user-friendly web interfaces.",
+    ],
+  },
+  {
+    id: "codsoft",
+    role: "Java Programming Intern",
+    company: "CodSoft",
+    period: "Sep 2024 – Oct 2024",
+    location: "Remote",
+    highlights: [
+      "Completed a 4-week virtual internship in Java Programming, building 3 console-based Java applications.",
+      "Number Guessing Game: Built a game where the player guesses a randomly generated number within limited trials, with real-time feedback on each guess.",
+      "Student Grade Calculator: Built a program to calculate total marks and average percentage from subject-wise input, and assign grades accordingly.",
+      "ATM Interface: Simulated an ATM system with classes for the machine and user's bank account, supporting withdrawal, deposit, and balance inquiry with input validation and transaction limits.",
+      "Strengthened skills in Object-Oriented Programming (OOP), input validation, error handling, and console-based interface design.",
+    ],
+  },
+];
+
 export interface Project {
   id: string;
   name: string;
@@ -126,10 +183,10 @@ export const projects: Project[] = [
       "Deployed services on Render.",
     ],
     links: [
-      { label: "Live Frontend", url: "PLACEHOLDER_LIVE_FRONTEND_URL" },
-      { label: "Admin Panel", url: "PLACEHOLDER_ADMIN_PANEL_URL" },
-      { label: "Backend API", url: "PLACEHOLDER_BACKEND_API_URL" },
-      { label: "GitHub", url: "PLACEHOLDER_GITHUB_REPO_URL" },
+      { label: "Live Frontend", url: "https://prescripto-full-stack-frontend-345u.onrender.com" },
+      { label: "Admin Panel", url: "https://prescripto-full-stack-admin-ltze.onrender.com" },
+      { label: "Backend API", url: "https://prescripto-full-stack-backend-p3hr.onrender.com" },
+      { label: "GitHub", url: "https://github.com/shivanisamadhiya/prescripto-full-stack" },
     ],
     featured: true,
   },
@@ -148,8 +205,8 @@ export const projects: Project[] = [
       "Configured GitHub-based deployment workflow with Vercel.",
     ],
     links: [
-      { label: "Live Website", url: "PLACEHOLDER_LIVE_WEBSITE_URL" },
-      { label: "GitHub", url: "PLACEHOLDER_GITHUB_REPO_URL" },
+      { label: "Live Website", url: "https://northpeak-digital-beta-three.vercel.app/" },
+      { label: "GitHub", url: "https://github.com/shivanisamadhiya/northpeak-digital" },
     ],
   },
   {
@@ -168,7 +225,7 @@ export const projects: Project[] = [
       "Object-Oriented Programming",
       "Modular and maintainable codebase",
     ],
-    links: [{ label: "GitHub", url: "PLACEHOLDER_GITHUB_REPO_URL" }],
+    links: [{ label: "GitHub", url: "https://github.com/shivanisamadhiya/KBC-GAME" }],
   },
 ];
 
@@ -213,4 +270,5 @@ export const aboutHighlights = [
   },
 ];
 
-export const navItems = ["Home", "About", "Skills", "Projects", "Certifications", "Contact"];
+export const navItems = ["Home", "About", "Skills", "Experience", "Projects", "Certifications", "Contact"];
+
