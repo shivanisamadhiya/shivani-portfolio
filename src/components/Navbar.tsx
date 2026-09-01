@@ -83,14 +83,14 @@ export default function Navbar() {
         <AnimatePresence>
           {open && (
             <motion.nav
-              initial={{ opacity: 0, y: -10, height: 0 }}
-              animate={{ opacity: 1, y: 0, height: "auto" }}
-              exit={{ opacity: 0, y: -10, height: 0 }}
+              initial={{ opacity: 0, y: -10}}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10, }}
               transition={{ duration: 0.25 }}
-              className="mt-2 overflow-hidden rounded-2xl border border-white/5 bg-navy-900/95 p-3 backdrop-blur-md md:hidden"
+              className="mt-2 rounded-2xl border border-white/5 bg-navy-900/95 p-3 backdrop-blur-md md:hidden"
               aria-label="Mobile"
             >
-              {navItems.map((item) => {
+            <          {navItems.map((item) => {
                 const id = item.toLowerCase();
                 const isActive = activeId === id;
                 return (
