@@ -58,6 +58,7 @@ All profile and project links are filled in and live in `src/data/resumeData.ts`
 ## 🗂️ Project Structure
 
 ```
+
 src/
 ├── 📊 data/
 │   └── resumeData.ts       # single source of truth for all content
@@ -71,6 +72,8 @@ src/
 │   ├── Hero.tsx
 │   ├── About.tsx
 │   ├── Skills.tsx
+│   ├── Experience.tsx      # work experience / internships
+│   ├── Education.tsx       # education & academic background
 │   ├── Projects.tsx
 │   ├── Certifications.tsx
 │   ├── Strengths.tsx
@@ -79,6 +82,7 @@ src/
 ├── App.tsx
 ├── main.tsx
 └── index.css
+
 ```
 
 ---
